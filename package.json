@@ -1,0 +1,23 @@
+{
+  "name": "acc-inventory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.6.7",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^2.0.20",
+    "validator": "^13.7.0"
+  }
+}
