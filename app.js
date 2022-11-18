@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const mongoose = require("mongoose");
 
 // middle wares
 app.use(express.json());
@@ -13,12 +12,14 @@ const brandRoute = require("./routes/brand.route");
 const storeRoute = require("./routes/store.route");
 const categoryRoute = require("./routes/category.route");
 const stoctRoute = require("./routes/stock.route");
+const userRoute = require("./routes/user.route");
 
 app.use("/api/v1/product", productRoute);
 app.use("/api/v1/brand", brandRoute);
 app.use("/api/v1/store", storeRoute);
 app.use("/api/v1/category", categoryRoute);
 app.use("/api/v1/stock", stoctRoute);
+app.use("/api/v1/user", userRoute);
 // DATA GET For query three method is available find, findOne, findByID
 module.exports = app;
 
